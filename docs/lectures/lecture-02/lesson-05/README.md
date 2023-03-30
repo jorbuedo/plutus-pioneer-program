@@ -23,7 +23,7 @@ After completing this homework assignment, you'll be able to:
 * Create an on-chain validator.
 * Inspect a validator's code to find and correct code bugs.
 * Employ custom data types.
-* Interact with validators using the cardano-cli to test them
+* Interact with validators using the cardano-cli to test them.
 {% endtab %}
 {% endtabs %}
 

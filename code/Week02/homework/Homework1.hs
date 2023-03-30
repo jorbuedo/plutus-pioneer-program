@@ -19,7 +19,7 @@ mkValidator :: () -> (Bool, Bool) -> PlutusV2.ScriptContext -> Bool
 mkValidator _ (a, b) _ = a && b
 
 wrappedVal :: BuiltinData -> BuiltinData -> BuiltinData -> ()
-wrappedVal = wrap mkValidator
+wrappedVal = wrapValidator mkValidator
 
 validator :: PlutusV2.Validator
 validator = PlutusV2.mkValidatorScript $$(PlutusTx.compile [|| wrappedVal ||])
